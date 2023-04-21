@@ -7,7 +7,7 @@
 int main(void)
 {char prop_gram[]= "with proper grammar, but the outcome is a piece of art,";
 fgets(prop_gram,40, stdin);
-printf ("%s",prop_gram);
+printf("%s\n" , prop_gram);
 	return (0);
 }
 
