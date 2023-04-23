@@ -4,7 +4,7 @@
  *
  * Return: Always 0 (Sucess)
  */
-#define Data_size(type) printf("size of a" #type: "%zu\n",sizeof(type))
+#define Data_size(type) printf("size of a" type: "%zu\n",sizeof(type))
 int main(void)
 {
 Data_size(char);
