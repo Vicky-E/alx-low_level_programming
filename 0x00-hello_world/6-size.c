@@ -6,6 +6,6 @@
  */
 int main(void)
 {
-printf("size of a" Type: "%zu\n" sizeof(Type));
+printf("size of a" (Type): "%zu\n" sizeof(Type));
 	return (0);
 }
