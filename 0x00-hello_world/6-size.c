@@ -5,8 +5,7 @@
  * Return: Always 0 (Sucess)
  */
 int main(void)
-{
-char char_size;
+{char char_size;
 int int_size;
 long int long_int;
 long long int long_2int;
