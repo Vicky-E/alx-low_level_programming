@@ -6,10 +6,9 @@
  */
 int main(void)
 {int a;
-for (a = 0; a <= 15; a++)
-{
-	putchar(a) | putchar(%x);
-}
+for (a = '0x00'; a <= '0xff'; a++)
+putchar(a);
+
 putchar('\n');
 return (0);
 }
