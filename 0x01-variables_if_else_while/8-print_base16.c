@@ -7,11 +7,11 @@
 int main(void)
 {int a;
 int hex[] = {0,1,2,3,4,5,6,7,8,9};
-char HEX[]= {'a', 'b', 'c', 'd', 'e', 'f'};
+char x;
 for (a = 0; a <= 10; a++)
 putchar( '0' + hex[a]);
-for (a = 11; a <= 16; a++)
-putchar( '0'+ HEX[a]);
+for (x ='a'; a <= 'f'; a++)
+putchar(x);
 
 putchar('\n');
 return (0);
