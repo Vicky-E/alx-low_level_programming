@@ -20,7 +20,7 @@ int main(void)
 		printf("last digit of %d %s\n", n, "is less than 6 and not 0");
 	}
 	else {
-	 printf("invalid")
+	 printf("invalid");
 	}	 
 	 return (0);
 }
