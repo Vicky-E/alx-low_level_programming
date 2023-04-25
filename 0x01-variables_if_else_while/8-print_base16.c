@@ -6,9 +6,11 @@
  */
 int main(void)
 {int a;
-int hex[] = {0x00,0x01,0x02,0x03,0x04,0x05,0x06,0x07,0x08,0x09,0xa,0xb,0xc,0xd,0xe,0xf};	
-for (a = 0; a <= 15; a++)
+int hex[] = {0,1,2,3,4,5,6,7,8,9,a,b,c,d,e,f};
+for (a = 0; a <= 10; a++)
 putchar(hex[a]);
+for (a = 11; a <= 16; a++)
+putchar('0' + hex[a]
 
 putchar('\n');
 return (0);
