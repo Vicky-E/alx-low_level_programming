@@ -5,8 +5,8 @@
  * Return: Always 0 (Sucess)
  */
 int main(void)
-{int a;
-for (a = '0x00'; a <= '0xff'; a++)
+{char a;
+for (a = 0x00; a <= 0xff; a++)
 putchar(a);
 
 putchar('\n');
