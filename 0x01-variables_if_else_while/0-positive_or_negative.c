@@ -24,7 +24,7 @@ int main(void)
 	}
 	else
 	{
-		printf(n, "is invalid %d\n");
+		printf("%d %s\n", n, "is invalid");
 	}
 	return (0);
 }
