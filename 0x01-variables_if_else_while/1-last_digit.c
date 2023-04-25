@@ -12,7 +12,7 @@ int main(void)
 	/* your code goes there */
 	l = n % 10;
 	if (n > 5){
-	 printf("last digit of %d %s\n", n, "is %s %d", l, "and is greater than 5"); 
+	 printf("last digit of %d %s\n", n, "is %d %s", l, " %s and is greater than 5"); 
 	}
 	else if (n == 0){
 		printf("last digit of %d %s\n", n, "and is zero");
