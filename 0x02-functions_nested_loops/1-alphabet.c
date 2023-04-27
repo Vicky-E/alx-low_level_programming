@@ -13,4 +13,5 @@ void print_alphabet(void)
 int main(void)
 {	char b = print_alphabet(void);
 	_putchar(char b);
+	-putchar(char \n);
 }
