@@ -9,5 +9,5 @@ void  pchar()
 {	char a;
 	a = "_putchar";
 	_putchar(a);
-	
+	_putchar('\n');	
 }
