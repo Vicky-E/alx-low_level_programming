@@ -1,7 +1,7 @@
 #include "main.h"
 #include <unistd.h>
 /**
- * main - Entry point
+ * print_alphabet prints a-z
  *
  * Return: always 0 (Sucess)
  */
