@@ -1,17 +1,21 @@
-#include <unistd.h>
 #include "main.h"
+#include <unistd.h>
 /**
  * main - Entry point
  *
  * Return: always 0 (Sucess)
  */
+int _putchar(char c);
 void print_alphabet(void)
 {	int a;
-	for (a = 'a'; a <= 'z';a++)
-		return a;
+	for (a = 'a'; a <= 'z'; a++)
+	_putchar(a);
 }
 int main(void)
-{	char b = print_alphabet(void);
-	_putchar(char b);
-	-putchar(char \n);
+{	print_alphabet();
+	_putchar('\n');
+}
+int _putchar(char c)
+{
+	return (write(1, &c, 1));
 }
