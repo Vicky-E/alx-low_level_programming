@@ -6,7 +6,7 @@
  * Return: Always 0 (Sucess)
  */
 int pchar()
-{	int a;
+{	char a;
 	a = '_putchar';
 	_putchar(a);
 	_putchar('\n');
