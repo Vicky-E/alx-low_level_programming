@@ -14,9 +14,9 @@ int print_last_digit(int x)
 	if(x < 0)
 	{
 		x = (-1 * x);
-		return(write(1, &x, &x));
+		return(write(1, &x, size_t));
 	}
 	else
-		return(write(1, &x, &x));
+		return(write(1, &x, size_t));
 }
 	
