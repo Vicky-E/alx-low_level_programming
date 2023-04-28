@@ -5,7 +5,7 @@
  * @a:integers to be added
  * @b:integer to be added
  *
- * return: on sucess value of c
+ * Return: on sucess c
  */
 
 int add(int a, int b)
