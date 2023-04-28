@@ -6,15 +6,14 @@
  *
  * return: Always 0 (sucess)
  */
-int _abs(int)
-{	int a;
-	
+int _abs(int a)
+{
 	if (a >= 0)
 	{
 		_putchar(a);
 	}
 	else if (a < 0)
-	{	a = - * a;
+	{	a = -1 * a;
 		_putchar(a);
 	}
 	else
