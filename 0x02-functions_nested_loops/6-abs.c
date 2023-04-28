@@ -15,7 +15,7 @@ int _abs(int a)
 	}
 	else if(a < 0)
 	{	a = -1 * a;
-		printf("%d\n", a);
+		return(printf("%d\n", a));
 	}
 
 }
