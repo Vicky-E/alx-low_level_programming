@@ -4,7 +4,7 @@
  * _isupper - checks for upper case
  * @c : variable
  *
- * Return: 0 on sucess
+ * Return: 1 for uppercase and 0 for otherwise
  */
 int _isupper(int c)
 {
