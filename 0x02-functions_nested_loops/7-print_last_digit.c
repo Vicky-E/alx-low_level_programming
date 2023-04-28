@@ -4,8 +4,7 @@
  * print_last_digit - prints last digit
  * @x:output
  *
- * return: on sucess 0
- * on error -1
+ * return: value of x
  */
 
 int print_last_digit(int x)
@@ -15,9 +14,9 @@ int print_last_digit(int x)
 	if(x < 0)
 	{
 		x = (-1 * x);
-		return(write(1, &x, 1));
+		return(write(1, &x, x));
 	}
 	else
-		return(write(1, &x, 1));
+		return(write(1, &x, x));
 }
 	
