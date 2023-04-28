@@ -10,11 +10,7 @@
 void last_digit();
 int print_last_digit(int x)
 {
-	x = last_digit();
-	_putchar(x);
-	return (0);
+	x = x % 10;
+	return(write(1, &x,1);
 }
-void last_digit()
-{int a,b;
-	b = a % 10;
-}
+	
