@@ -10,7 +10,7 @@ int _abs(int a)
 {
 	if (a >= 0)
 	{
-		_putchar('0' + a);
+		_putchar('48' + a);
 	}
 	else if(a < 0)
 	{	a = -1 * a;
