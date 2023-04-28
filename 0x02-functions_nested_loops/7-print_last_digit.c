@@ -17,7 +17,7 @@ int print_last_digit(int x)
 		x = (-1 * x);
 		return(write(1, &x, sizeof(int)));
 	}
-	else if(x > 0)
+	else
 		return(write(1, &x, sizeof(int)));
 }
 	
