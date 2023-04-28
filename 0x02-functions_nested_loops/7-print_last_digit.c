@@ -16,8 +16,10 @@ int print_last_digit(int x)
 	return(write(1, &x, sizeof(int)));
 	}
 	else if(x < 0)
+	{
 		x = (-1 * x);
 		x = ((x % 10) + '0');
 		return(write(1, &x, sizeof(int)));
+	}
 }
 	
