@@ -2,16 +2,15 @@
 #include "main.h"
 /** 
  * _isupper - checks for upper case
- * @c :output
+ * @c : variable
  *
- * return: 0 on sucess
+ * Return: 0 on sucess
  */
 int _isupper(int c)
 {
 	if (c >= 'A' && c <= 'Z')
-	{
+	
 		return (1);
-	}
 	else
 		return (0);
 }
