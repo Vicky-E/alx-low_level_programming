@@ -11,4 +11,4 @@ void print_alphabet_x10(void);
  int _abs(int a);
  void last_digit();
  int print_last_digit(int x);
- int add(int a int b);
+ int add(int a, int b);
