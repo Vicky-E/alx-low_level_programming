@@ -2,7 +2,9 @@
 #include "main.h"
 /**
  * add - adds 2 integers
- * @c :return value
+ * @a,b:integers to be added
+ *
+ * return: value of c
  */
 
 int add(int a, int b)
