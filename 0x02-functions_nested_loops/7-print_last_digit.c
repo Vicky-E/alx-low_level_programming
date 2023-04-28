@@ -11,6 +11,6 @@
 int print_last_digit(int x)
 {
 	x =((x % 10) + '0');
-	return(write(1, &x, strlen(x)));
+	return(write(1, &x, sizeof(x)));
 }
 	
