@@ -9,13 +9,14 @@
  */
 int _abs(int a)
 {
-	if (a >= 0)
 	
-		return(printf("%d\n", a));
-	
-	else if(a < 0)
+	if(a < 0)
+	{
 		a = -1 * a;
 		return(printf("%d\n", a));
+	}
+	else
+		return(printf("%d\n", a))
 	
 
 }
