@@ -16,7 +16,7 @@ int _abs(int a)
 		return(printf("%d\n", a));
 	}
 	else
-		return(printf("%d\n", a))
+		return(printf("%d\n", a));
 	
 
 }
