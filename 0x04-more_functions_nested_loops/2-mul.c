@@ -1,7 +1,7 @@
 #include <unistd.h>
 #include "main.h"
 /**
- * mul - multiplies 2 integers
+ * mul - multiplies integers
  * @x: result of two numbers
  * @a: integer to be multiplied
  * @b: integer to be multiplied
@@ -10,6 +10,7 @@
  */
 int mul(int a, int b)
 {int x;
+	
 	x = a * b;
 
 	return (x);
