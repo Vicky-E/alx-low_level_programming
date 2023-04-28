@@ -1,5 +1,6 @@
 #include <unistd.h>
 #include "main.h"
+#include <stdio.h>
 /**
  * _abs - computes absolute value of integer
  * @a:output
