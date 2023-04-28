@@ -1,6 +1,7 @@
 #include <unistd.h>
 #include "main.h"
-/** _isupper - checks for upper case
+/** 
+ * _isupper - checks for upper case
  * @c :output
  *
  * return: 0 on sucess
