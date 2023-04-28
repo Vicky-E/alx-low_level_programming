@@ -3,11 +3,12 @@
 /**
  * _isdigit - checks for digit
  * @c: output
- * Returns: c
+ *
+ * Return: on sucess 1
  */
 int _isdigit(int c)
-{	if (c >= 0  || c < 0)
- 		return (1);
+{	if (c >= 0 || c < 0)
+		return (1);
 	else
 		return (0);
 }
