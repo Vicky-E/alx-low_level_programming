@@ -17,6 +17,6 @@ int _abs(int a)
 	{	a = -1 * a;
 		printf("%d\n", a);
 	}
-	
+	return (0);
 
 }
