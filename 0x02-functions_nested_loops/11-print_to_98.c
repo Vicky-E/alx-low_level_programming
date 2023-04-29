@@ -6,11 +6,16 @@
  *
  */
 void print_to_98(int n)
-{	while (n < 99)
+{for (n < 98; n++)
 	{
 		printf("%d\n", n);
-		_putchar(',');
-		_putchar(' ');
-		n++;
+		putchar(',');
+		putchar(' ');
+		
 	}
+for (n > 98; n--)
+	{
+		printf("%d\n", n);
+		putchar(',');
+		putchar(' ');
 }	       	
