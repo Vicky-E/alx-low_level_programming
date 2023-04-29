@@ -12,6 +12,7 @@ int main(void)
 
 		putchar('0' + x);
 		putchar(',');
+		putchar(' ');
 	
 	}
 	return (0);
