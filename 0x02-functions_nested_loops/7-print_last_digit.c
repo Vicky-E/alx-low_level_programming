@@ -15,9 +15,10 @@ int print_last_digit(int x)
 	if(x < 0)
 	{
 		x = (-1 * x);
-		return(write(1, &x, n));
+		return(x);
+		_putchar(x);
 	}
 	else
-		return(write(1, &x, n));
+		return(x);
 }
 	
