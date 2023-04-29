@@ -12,4 +12,4 @@ void print_alphabet_x10(void);
  void last_digit();
  int print_last_digit(int x);
  int add(int a, int b);
- void times_table();
+ void times_table(void);

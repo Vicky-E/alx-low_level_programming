@@ -6,7 +6,7 @@
  * Return: 0
  */
 void times_table(void)
-{	int x = 0;
+{	int x;
 
 	int z;
 	int y;
@@ -15,8 +15,9 @@ void times_table(void)
 		for (x = 0; x < 10; x++)
 		{
 			z = x * y;
-			_putchar('0' + z);
+			_putchar(48 + z);
 			_putchar(',');
+			_putchar(' ');
 			_putchar(' ');
 		}
 		_putchar('\n');
