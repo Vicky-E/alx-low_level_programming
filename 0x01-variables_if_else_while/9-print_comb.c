@@ -11,9 +11,13 @@ int main(void)
 	{
 		putchar('0' + x);
 		putchar(',');
-		putchar(' ');
 		if (x == 9)
+		{
 			putchar('0' + x);
+			break;
+		}		
+		putchar(' ');
+
 		x++;
 	}
 	return (0);
