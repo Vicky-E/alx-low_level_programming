@@ -5,16 +5,16 @@
  * Return: On sucess 0
  */
 int main(void)
-{	int x;
+{	int x = 0;
 
-	for (x = 0; x <= 9; x++)
-	
+	while (x <= 9)
 	{
 		putchar('0' + x);
 		putchar(',');
 		putchar(' ');
+		x++;
 		if (x == 9)
-			putchar(x);
+			putchar('0' + x);
 	}
 	return (0);
 }
