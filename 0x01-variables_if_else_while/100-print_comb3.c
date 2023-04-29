@@ -13,7 +13,7 @@ for (y = 0; y <= 9; y++)
         while (x <= 9)
         {
                 putchar('0' + x);
-		putchar('0' + y)
+		putchar('0' + y);
                 putchar(',');
                 putchar(' ');
 
