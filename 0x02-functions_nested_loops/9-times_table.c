@@ -10,8 +10,8 @@ void times_table(void)
 
 	int z;
 	int y = 0;
-
-	while (y < 10)
+	
+	while (y < 10 && z != 81)
 	{	
 		for (x = 0; x < 10; x++)
 		{
