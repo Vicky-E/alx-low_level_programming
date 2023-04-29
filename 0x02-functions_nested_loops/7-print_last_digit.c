@@ -16,10 +16,10 @@ int print_last_digit(int x)
 	{
 		x = (-1 * x);
 		return(x);
-		_putchar(x);
+		_putchar('0' + x);
 	}
 	else
-		_putchar(x);
+		_putchar('0' + x);
 	return (x);
 }
 	
