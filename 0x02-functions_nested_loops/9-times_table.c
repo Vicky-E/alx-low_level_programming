@@ -16,6 +16,7 @@ void times_table()
 		{
 			z = x * y;
 			_putchar('0' + z);
+			x++;
 		}
 		_putchar('\n');
 	}
