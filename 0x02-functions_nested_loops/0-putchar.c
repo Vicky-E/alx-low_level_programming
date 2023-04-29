@@ -5,10 +5,10 @@
  *
  * Return: Always 0 (Sucess)
  */
-int pchar()
-{
-	write(1,"_putchar", 9);
-
+int  pchar()
+{	int a;
+	a = "_putchar";
+	_putchar(a);
 	_putchar('\n');
 	return (0);
 }
