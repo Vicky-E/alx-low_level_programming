@@ -7,7 +7,7 @@
  */
 int pchar()
 {
-	char a = write(1,"_putchar", 9);
+	write(1,"_putchar", 9);
 
 	_putchar('\n');
 	return (0);
