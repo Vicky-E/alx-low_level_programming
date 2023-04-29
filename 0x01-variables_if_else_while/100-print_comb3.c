@@ -5,12 +5,12 @@
  * Return: On sucess 0
  */
 int main(void)
-{int x = 0;
+{int x;
 int y;
 
 for (y = 0; y <= 9; y++)
 {	
-        while (x <= 9)
+        for (x = 0; x <= 9; x++)
         {
                 putchar('0' + x);
 		putchar('0' + y);
