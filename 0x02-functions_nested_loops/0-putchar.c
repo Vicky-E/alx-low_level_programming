@@ -6,9 +6,8 @@
  * Return: Always 0 (Sucess)
  */
 int pchar()
-{	char a[] = "_putchar";
-
-	_putchar(a);
+{	int a;
+	a = write(1,"_putchar", 9);
 	_putchar('\n');
 	return (0);
 }
