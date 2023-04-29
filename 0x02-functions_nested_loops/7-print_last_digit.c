@@ -8,15 +8,16 @@
  */
 
 int print_last_digit(int x)
-{
+{	int n;
 	x =((x % 10) + '0');
+
 	
 	if(x < 0)
 	{
 		x = (-1 * x);
-		return(write(1, &x, size_t x));
+		return(write(1, &x, size_t(x)));
 	}
 	else
-		return(write(1, &x, size_t x));
+		return(write(1, &x, size_t(x)));
 }
 	
