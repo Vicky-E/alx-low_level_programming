@@ -11,12 +11,12 @@ void times_table(void)
 	int z;
 	int y = 0;
 	
-	while (y < 10 && z != 81)
+	while (y < 10)
 	{	
 		for (x = 0; x < 10; x++)
 		{
-			z = x * y;
-			_putchar('0' + z);
+			z = (x * y) + '0';
+			_putchar(z);
 			_putchar(',');
 			_putchar(' ');
 			_putchar(' ');
