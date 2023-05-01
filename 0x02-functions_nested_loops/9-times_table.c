@@ -10,14 +10,20 @@ void times_table(void)
 
 	int z;
 	int y = 0;
-	
+
 	while (y < 10)
-	{	
+	{
 		for (x = 0; x < 10; x++)
 		{
 			z = (x * y);
-			_putchar((z / 10) + '0');
-			_putchar((z % 10) + '0');
+
+			if (z > 9)
+			{
+				_putchar((z / 10) + '0');
+				_putchar((z % 10) + '0');
+			}
+			else
+				_putchar(z + '0');
 			_putchar(',');
 			_putchar(' ');
 			_putchar(' ');
