@@ -22,7 +22,7 @@ while (y <= 9)
 			putchar('0' + y);
 			putchar('0' + z);
 			putchar('0' + x);
-			if (y == 7 && x == 8 && z == 9)
+			if (y == 7 && z == 8 && x == 9)
 				continue;
 			putchar(',');
 			putchar(' ');
