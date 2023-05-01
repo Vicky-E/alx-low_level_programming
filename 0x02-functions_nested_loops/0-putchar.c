@@ -1,11 +1,11 @@
 #include <unistd.h>
-#include "main.h"
+
 /**
- * pchar - prints _putchar
+ * main - prints _putchar
  *
  * Return: Always 0 (Sucess)
  */
-void pchar(void)
+int main(void)
 {
 	_putchar('_');
 	_putchar('p');
@@ -16,5 +16,5 @@ void pchar(void)
 	_putchar('a');
 	_putchar('r');
 	_putchar('\n');
-
+	return (0);
 }
