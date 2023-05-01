@@ -27,8 +27,8 @@ int main(void)
 					if ((w == 9 && x == 8) && (y == 9 && z == 9))
 							continue;
 					putchar(',');
-					putchar(' ');
-				}*/
+					putchar(' ');*/
+				}
 			}
 			x++;
 		}
