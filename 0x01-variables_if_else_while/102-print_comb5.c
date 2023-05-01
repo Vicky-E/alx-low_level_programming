@@ -6,12 +6,12 @@
  */
 int main(void)
 {
-	int w, x, y, z;
+	/**int w, x, y, z;
 
 	w = 0;
 	x = 0;
 
-	/**while (w < 10)
+	while (w < 10)
 	{
 		while (x < 10)
 		{
