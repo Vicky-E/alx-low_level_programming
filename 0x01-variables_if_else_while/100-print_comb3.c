@@ -14,8 +14,8 @@ while (y <= 9)
 {
 	for(x = 0; x <= 9; x++)
 	{
-		putchar('0' + x);
 		putchar('0' + y);
+		putchar('0' + x);
 		putchar(',');
 		putchar(' ');
 		x++;
