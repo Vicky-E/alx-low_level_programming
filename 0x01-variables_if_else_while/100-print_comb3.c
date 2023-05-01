@@ -18,7 +18,8 @@ while (y <= 9)
 		putchar('0' + x);
 		putchar(',');
 		putchar(' ');
-
+	if (x == y)
+		continue;
 	}
 	y++;
 }
