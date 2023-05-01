@@ -6,13 +6,13 @@
  */
 int main(void)
 {
-int x = 0;
+int y = 0;
 
-int y;
+int x;
 
-for (y = 0; y <= 9; y++)
+while (y <= 9)
 {
-	while(x <= 9)
+	for(x = 0; x <= 9; x++)
 	{
 		putchar('0' + x);
 		putchar('0' + y);
@@ -20,6 +20,7 @@ for (y = 0; y <= 9; y++)
 		putchar(' ');
 		x++;
 	}
+	y++;
 }
 
 	return (0);
