@@ -10,9 +10,7 @@ int main(void)
 	int x;
 
 
-	w = 0;
-
-	while (w < 99)
+	for (w = 0; w < 99; w++)
 	{
 
 		for (x = w + 1; x < 100; x++)
@@ -27,10 +25,9 @@ int main(void)
 			putchar(',');
 			putchar(' ');
 		}
-		
+
 
 	}
-	w++;
 
 	putchar('\n');
 	return (0);
