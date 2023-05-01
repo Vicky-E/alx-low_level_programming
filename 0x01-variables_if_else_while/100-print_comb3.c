@@ -13,7 +13,7 @@ int x;
 while (y <= 9)
 {
 	for (x = y + 1; x <= 9; x++)
-	{	
+	{
 		if (x == y)
 			continue;
 		putchar('0' + y);
