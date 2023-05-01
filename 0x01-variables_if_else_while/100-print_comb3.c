@@ -12,11 +12,11 @@ int x;
 
 while (y <= 9)
 {
-	for(x = 0; x <= 9; x++)
+	for(x = y + 1; x <= 9; x++)
 	{	if (x == y)
 			continue;
-		putchar('0' + y);
-		putchar('0' + x);
+		putchar('0' + (y % 10));
+		putchar('0' + (x % 10));
 		putchar(',');
 		putchar(' ');
 	
