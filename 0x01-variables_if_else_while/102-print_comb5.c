@@ -18,7 +18,7 @@ int main(void)
 	{
 		while (x < 10)
 		{
-			for (y = x + 1; y < 10; y++)
+			for (y = w + 1; y < 10; y++)
 			{
 				for (z = x + 1; z < 10; z++)
 				{
