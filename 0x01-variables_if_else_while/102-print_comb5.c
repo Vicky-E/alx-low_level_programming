@@ -1,4 +1,4 @@
-#include <stdio.h>
+#ianclude <stdio.h>
 /**
  * main - prints two two digits numbers
  *
@@ -15,7 +15,7 @@ int main(void)
 	{
 		while (x < 10)
 		{
-			for (y = 0; y < 10; y++)
+			for (y = x + 1; y < 10; y++)
 			{
 				for (z = x + 1; z < 10; z++)
 				{
