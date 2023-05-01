@@ -8,10 +8,11 @@ int main(void)
 {
 	int w, x, y, z;
 	w = 0;
+	x = 0;
 
 	while (w < 10)
 	{
-		for (x = 0; x < 10; x++)
+		while (x < 10)
 		{
 			for (y = 0; y < 10; y++)
 			{
@@ -26,7 +27,7 @@ int main(void)
 					putchar(' ');
 				}
 			}
-
+			x++;
 		}
 		w++;
 	}
