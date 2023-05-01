@@ -8,7 +8,8 @@ int main(void)
 {
 	int w;
 	int x;
-	int y, z;
+	int y;
+	int z;
 
 	w = 0;
 	x = 0;
