@@ -12,14 +12,16 @@ int main(void)
 
 	w = 0;
 
-	while (w < 98)
+	while (w < 99)
 	{
 
 		for (x = w + 1; x < 100; x++)
 		{
-			putchar(w + '0');
+			putchar((w / 10) + '0');
+			putchar((w % 10) + '0');
 			putchar(' ');
-			putchar(x + '0');
+			putchar((x / 10) + '0');
+			putchar((x % 10) + '0');
 			if (w == 98 && x == 99)
 				continue;
 			putchar(',');
