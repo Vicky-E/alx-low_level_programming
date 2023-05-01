@@ -16,11 +16,11 @@ int main(void)
 
 	while (w < 10)
 	{
-		while (x < 10)
+		while (x < 9)
 		{
-			for (y = w + 1; y < 10; y++)
+			for (y = 0; y < 10; y++)
 			{
-				for (z = x + 1; z < 10; z++)
+				for (z = w + 1; z < 10; z++)
 				{
 					putchar(w + '0');
 					putchar(x + '0');
