@@ -1,4 +1,4 @@
-#ianclude <stdio.h>
+#include <stdio.h>
 /**
  * main - prints two two digits numbers
  *
