@@ -17,6 +17,8 @@ while (y <= 9)
 			continue;
 		putchar('0' + (y % 10));
 		putchar('0' + (x % 10));
+		if (y == 8 && x == 9)
+			continue;
 		putchar(',');
 		putchar(' ');
 	
