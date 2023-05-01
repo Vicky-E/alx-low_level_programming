@@ -17,7 +17,7 @@ while (y <= 9)
 	{
 		for (x = z + 1; x <= 9; x++)
 		{
-                	if (z == y && y == x)
+			if (z == y && y == x)
 				continue;
 			putchar('0' + y);
 			putchar('0' + z);
@@ -28,7 +28,7 @@ while (y <= 9)
 			putchar(' ');
 
 		}
-		z++;
+
 	}
 	y++;
 }
