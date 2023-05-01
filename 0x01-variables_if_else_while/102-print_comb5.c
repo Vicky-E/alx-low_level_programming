@@ -20,7 +20,7 @@ int main(void)
 		{
 			for (y = 0; y < 10; y++)
 			{
-				for (z = w + 1; z < 10; z++)
+				for (z = y + 1; z < 10; z++)
 				{
 					putchar(w + '0');
 					putchar(x + '0');
