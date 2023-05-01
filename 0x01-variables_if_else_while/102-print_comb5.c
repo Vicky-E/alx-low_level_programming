@@ -6,7 +6,7 @@
  */
 int main(void)
 {
-	/**int w, x, y, z;
+	int w, x, y, z;
 
 	w = 0;
 	x = 0;
@@ -33,7 +33,7 @@ int main(void)
 			x++;
 		}
 		w++;
-	}*/
+	}
 	putchar('\n');
 	return (0);
 }
