@@ -5,7 +5,7 @@
  *
  * Return: Always 0 (Sucess)
  */
-int  pchar()
+void pchar(void)
 {
 	_putchar('_');
 	_putchar('p');
@@ -16,5 +16,5 @@ int  pchar()
 	_putchar('a');
 	_putchar('r');
 	_putchar('\n');
-	return (0);
+
 }
