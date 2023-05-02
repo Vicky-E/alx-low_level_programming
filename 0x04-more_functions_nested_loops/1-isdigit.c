@@ -15,5 +15,5 @@ int _isdigit(int c)
 	else if (c >= 'A' && c <= 'Z')
 		return (0);
 	else
-		return (c);
+		return (0);
 }
