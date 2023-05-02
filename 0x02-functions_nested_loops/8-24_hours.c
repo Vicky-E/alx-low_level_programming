@@ -4,7 +4,7 @@
  * jack_bauer - prints every hour and minute of the day
  * Return: none
  */
-jack_bauer()
+void jack_bauer()
 {
 	int h, m;
 	for (h = 0; h < 24; h++)
