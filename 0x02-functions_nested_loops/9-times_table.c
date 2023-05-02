@@ -26,12 +26,12 @@ void times_table(void)
 				_putchar(',');
 				_putchar(' ');
 			}
-			else if (z == 8 || z == 9)
+			/*Uelse if (z == 8 || z == 9)
 			{
 				_putchar(z + '0');
 				_putchar(',');
 				_putchar(' ');
-			}
+			}*/
 			else
 			{
 				_putchar((z % 10) + '0');
