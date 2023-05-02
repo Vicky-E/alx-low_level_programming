@@ -17,12 +17,18 @@ void times_table(void)
 		{
 			z = (x * y);
 
-			if (z >= 9)
+			if (z > 9)
 			{
 				_putchar((z / 10) + '0');
 				_putchar((z % 10) + '0');
 				if (x == 9)
 					break;
+				_putchar(',');
+				_putchar(' ');
+			}
+			else if (z == 9)
+			{
+				_putchar(z + '0');
 				_putchar(',');
 				_putchar(' ');
 			}
