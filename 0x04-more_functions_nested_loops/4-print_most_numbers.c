@@ -1,5 +1,5 @@
 #include <unistd.h>
-#include "main"
+#include "main.h"
 /**
  * print_most_numbers - prints most numbers
  *
