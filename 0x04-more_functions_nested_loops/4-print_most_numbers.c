@@ -5,8 +5,9 @@
  *
  * Return - none
  */
-void print_most_numbers (void)
-{	int n;
+void print_most_numbers(void)
+{
+	int n;
 
 	while (n <= 9)
 	{
