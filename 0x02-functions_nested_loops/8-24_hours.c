@@ -1,11 +1,12 @@
 #include <unistd.h>
 #include "main.h"
 /**
- * jack_bauer _ prints every hour and minute of the day
- *
+ * jack_bauer - prints every hour and minute of the day
+ * Return: none
  */
 void jack_bauer(void)
-{int h, m;
+{
+	int h, m;
 	for (h = 0; h < 24; h++)
 	{
 		for (m = 0; m < 60; m++)
