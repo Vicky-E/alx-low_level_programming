@@ -8,7 +8,7 @@
  */
 int _isdigit(int c)
 {
-	if (c >= 0 && c <= 999)
+	if (c >= 0 && c <= 1099)
 		return (1);
 	else if (c >= 'a' && c <= 'z')
 		return (0);
