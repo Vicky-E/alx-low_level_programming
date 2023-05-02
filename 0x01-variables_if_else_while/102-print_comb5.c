@@ -6,34 +6,29 @@
  */
 int main(void)
 {
-	int w, x, y, z;
+	int w;
+	int x;
 
-	w = 0;
-	x = 0;
 
-	while (w < 10)
+	for (w = 0; w < 99; w++)
 	{
-		while (x < 10)
+
+		for (x = w + 1; x < 100; x++)
 		{
-			for (y = 0; y < 10; y++)
-			{
-				for (z = x + 1; z < 10; z++)
-				{
-					putchar(w + '0');
-					putchar(x + '0');
-					putchar(' ');
-					putchar(y + '0');
-					putchar(z + '0');
-					if ((w == 9 && x == 8) && (y == 9 && z == 9))
-							continue;
-					putchar(',');
-					putchar(' ');
-				}
-			}
-			x++;
+			putchar((w / 10) + '0');
+			putchar((w % 10) + '0');
+			putchar(' ');
+			putchar((x / 10) + '0');
+			putchar((x % 10) + '0');
+			if (w == 98 && x == 99)
+				continue;
+			putchar(',');
+			putchar(' ');
 		}
-		w++;
+
+
 	}
+
 	putchar('\n');
 	return (0);
 }
