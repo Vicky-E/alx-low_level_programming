@@ -2,10 +2,14 @@
 #include "main.h"
 /**
  * _puts - prints string to stdout
+ * @str: string to be printed out
  * Return: nothing
  */
 void _puts(char *str)
 {
+	char c;
 
-	_putchar(*str);
+	c = str;
+
+	_putchar(c);
 }
