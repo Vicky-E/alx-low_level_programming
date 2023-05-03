@@ -3,11 +3,11 @@
 /**
  * print_rev - prints in reverse
  * @s - character to be reversed
- * Return: 0
+ * Return: nothing
  */
 void print_rev(char *s)
 {
-	while (*s)
+	while (*s++)
 		_putchar(*s--);
 	_putchar('\n');
 }
