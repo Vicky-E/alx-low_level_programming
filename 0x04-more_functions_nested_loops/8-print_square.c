@@ -18,6 +18,8 @@ void print_square(int size)
 		{
 			_putchar('#');
 		}
+		if (row == size - 1)
+			continue;
 		_putchar('\n');
 	}
 	_putchar('\n');
