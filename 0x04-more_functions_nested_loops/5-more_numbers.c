@@ -10,7 +10,7 @@ void more_numbers(void)
 	int x;
 	int y;
 
-	for (y = 0; y < 11; y++)
+	for (y = 0; y < 10; y++)
 	{
 		for (x = 0; x <= 14; x++)
 		{	if (x > 9)
@@ -18,6 +18,8 @@ void more_numbers(void)
 				_putchar((x / 10) + '0');
 				_putchar((x % 10) + '0');
 			}
+			else
+				write(1, &x, 1);
 		}
 		_putchar('\n');
 	}
