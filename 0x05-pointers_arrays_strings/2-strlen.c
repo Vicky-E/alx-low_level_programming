@@ -6,12 +6,20 @@
  * Return: 0
  */
 int _strlen(char *s)
-{	int len;
+{
+	int len;
 
 	while (*s)
 	{
 		*s++;
 		len++;
 	}
-	return (len);
+	if (len < 10)
+		_putchar((len % 10) + '0');
+	else
+	{
+		_putchar((len / 10) + '0');
+		_putchar((len % 10) + '0');
+	}
+	return (0);
 }
