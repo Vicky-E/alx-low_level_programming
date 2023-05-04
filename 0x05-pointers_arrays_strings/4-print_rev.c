@@ -11,9 +11,9 @@ void print_rev(char *s)
 	while (*s)
 	{
 		c = *s++;
-		c++;
+
 
 	}
-	_putchar(c--);
+	_putchar);
 	_putchar('\n');
 }

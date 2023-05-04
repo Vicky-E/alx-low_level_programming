@@ -6,7 +6,7 @@
  * Return: 0
  */
 int _strlen(char *s)
-{	int l;
+{	int len;
 
 	while (*s)
 	{
