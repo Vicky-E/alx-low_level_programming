@@ -7,19 +7,19 @@
  */
 int _strlen(char *s)
 {
-	int len = 0;
+	int l = 0;
 
 	while (*s)
 	{
 		*s++;
-		len++;
+		l++;
 	}
-	if (len < 10)
-		_putchar((len % 10) + '0');
+	if (l < 10)
+		_putchar((l % 10) + '0');
 	else
 	{
-		_putchar((len / 10) + '0');
-		_putchar((len % 10) + '0');
+		_putchar((l / 10) + '0');
+		_putchar((l % 10) + '0');
 	}
 	return (0);
 }
