@@ -7,10 +7,10 @@
  */
 void print_square(int size)
 {
-	int r;
+	int row;
 	int c;
 
-	for (r = 0; r < size; r++)
+	for (row = 0; row < size; row++)
 	{
 		for (c = 0; c < size; c++)
 		{	if (size <= 0)
