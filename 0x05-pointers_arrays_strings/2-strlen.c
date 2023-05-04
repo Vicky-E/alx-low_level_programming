@@ -14,12 +14,5 @@ int _strlen(char *s)
 		*s++;
 		l++;
 	}
-	if (l < 10)
-		_putchar((l % 10) + '0');
-	else
-	{
-		_putchar((l / 10) + '0');
-		_putchar((l % 10) + '0');
-	}
-	return (0);
+	return (l);
 }
