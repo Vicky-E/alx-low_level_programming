@@ -2,7 +2,7 @@
 #include "main.h"
 /**
  * print_square - prints a square
- * size: no of rows and columns
+ * @size: no of rows and columns
  * Return: nothing
  */
 void print_square(int size)
