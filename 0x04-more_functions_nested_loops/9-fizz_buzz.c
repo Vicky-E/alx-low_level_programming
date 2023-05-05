@@ -18,8 +18,7 @@ int main(void)
 			printf("Fizz ");
 		else if ((n % 5) == 0)
 		{
-			printf("Buzz");
-			printf(" ");
+			printf("Buzz ");
 		}
 		else
 		{
