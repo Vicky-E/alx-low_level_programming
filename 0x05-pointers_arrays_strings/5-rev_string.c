@@ -2,6 +2,7 @@
 #include "main.h"
 /**
  * rev_string - reverses a string
+ * @s: string to be reversed
  * Return: nothing
  */
 void rev_string(char *s)
@@ -15,6 +16,6 @@ void rev_string(char *s)
 	}
 	for (i = l - 1; i >= 0; i--)
 	{
-		s[i];
+		s = s[i];
 	}
 }
