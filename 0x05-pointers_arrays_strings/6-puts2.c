@@ -2,7 +2,7 @@
 #include "main.h"
 /**
  * puts2 - prints every other line
- * str - string to br printed
+ * @str - string to be printed
  * Return: nothing
  */
 void puts2(char *str)
