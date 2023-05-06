@@ -3,36 +3,38 @@
 /**
  * times_table - prints multiplication table
  *
- * Return: 0
+ * Return: nothing
  */
 void times_table(void)
-{	int x;
-
+{	
+	int i;
+	int x;
 	int z;
-	int y;
-
-	for (y = 0; y < 10; y++)
+	for (x = 0; x < 10; x++)
 	{
-		for (x = 0; x < 10; x++)
+		_putchar(0 + '0');
+		_putchar(',');
+
+		for (i = 1; i < 10; i++)
 		{
-			z = (x * y);
+			z = x * i;
 			if (z > 9)
 			{
-				_putchar('0' + (z / 10));
+				_putchar(' ');
+				_putchar((z / 10) + '0');
 				_putchar((z % 10) + '0');
-				if (x == 9)
+				if (i == 9)
 					break;
 				_putchar(',');
-				_putchar(' ');
 			}
 			else
 			{
-				_putchar('0' + (z % 10));
-				if (x == 9)
+				_putchar(' ');
+				_putchar(' ');
+				_putchar((z % 10) + '0');
+				if (i == 9)
 					break;
 				_putchar(',');
-				_putchar(' ');
-				_putchar(' ');
 			}
 		}
 		_putchar('\n');
