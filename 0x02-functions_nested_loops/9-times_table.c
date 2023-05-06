@@ -24,7 +24,6 @@ void times_table(void)
 				if (x == 9)
 					break;
 				_putchar(',');
-				_putchar(' ');
 			}
 			else
 			{
@@ -32,11 +31,15 @@ void times_table(void)
 				if (x == 9)
 					break;
 				_putchar(',');
-				_putchar(' ');
-				_putchar(' ');
-				_putchar(' ');
 			}
+			_putchar('\n');
 		}
-		_putchar('\n');
+		if (z > 9)
+			_putchar(' ');
+		else
+		{
+			_putchar(' ');
+			_putchar(' ');
+		}
 	}
 }
