@@ -32,8 +32,8 @@ void times_table(void)
 					break;
 				_putchar(',');
 			}
-			_putchar('\n');
 		}
+		_putchar('\n');
 		if (z > 9)
 			_putchar(' ');
 		else
