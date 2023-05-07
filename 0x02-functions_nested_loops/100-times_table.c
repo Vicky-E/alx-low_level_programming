@@ -9,12 +9,12 @@ void print_times_table(int n)
 {	int i, x, z;
 
 	for (x = 0; x < (n + 1); x++)
-	{	if (n < 0 || n > 15)
+	{
+		if (n < 0 || n > 15)
 			break;
 		_putchar(0 + '0');
 		if (n == 0)
-		{
-			_putchar('\n');
+		{	_putchar('\n');
 			break;
 		}
 		_putchar(',');
