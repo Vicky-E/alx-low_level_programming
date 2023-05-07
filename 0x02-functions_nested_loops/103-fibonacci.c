@@ -25,4 +25,5 @@ int main(void)
 		x = z;
 	}
 	printf("%lu\n", a);
+	return (0);
 }
