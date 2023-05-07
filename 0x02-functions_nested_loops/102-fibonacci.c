@@ -9,10 +9,10 @@ int main(void)
 
 	w = 1;
 	x = 2;
-	printf("%d", w);
+	printf("%lu", w);
 	printf(",");
 	printf(" ");
-	printf("%d", x);
+	printf("%lu", x);
 	printf(",");
 	printf(" ");
 	for (y = 0; y < 48; y++)
