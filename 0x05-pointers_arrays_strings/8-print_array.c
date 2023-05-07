@@ -8,9 +8,9 @@
  */
 void print_array(int *a, int n)
 {
-	int i;
+	int i = 0;
 
-	while (a[i++])
+	while (a[i])
 	{
 		if (i < 0 || i > n)
 			break;
@@ -19,6 +19,7 @@ void print_array(int *a, int n)
 			break;
 		printf(",");
 		printf(" ");
+		i++;
 	}
 	_putchar('\n');
 }
