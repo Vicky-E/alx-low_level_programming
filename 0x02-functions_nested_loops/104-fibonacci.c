@@ -20,6 +20,7 @@ int main(void)
 		z = w + x;
 		printf("%lu", z);
 		if (y == 95)
+			printf(" ");
 			break;
 		printf(",");
 		printf(" ");
