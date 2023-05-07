@@ -6,12 +6,10 @@
  * Return:nothing
  */
 void print_times_table(int n)
-{
-	int i, x, z;
+{	int i, x, z;
 
 	for (x = 0; x < (n + 1); x++)
-	{
-		if (n < 0 || n > 15)
+	{	if (n < 0 || n > 15)
 			break;
 		_putchar(0 + '0');
 		if (n == 0)
@@ -21,8 +19,7 @@ void print_times_table(int n)
 		}
 		_putchar(',');
 		for (i = 1; i < (n + 1); i++)
-		{
-			z = x * i;
+		{	z = x * i;
 			if (z > 99)
 			{
 				_putchar(' ');
