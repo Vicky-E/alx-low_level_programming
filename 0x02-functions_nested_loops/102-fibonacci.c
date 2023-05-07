@@ -5,7 +5,7 @@
  */
 int main(void)
 {
-	int w, x, y, z;
+	unsigned long int u, w, x, y, z;
 
 	w = 1;
 	x = 2;
@@ -18,13 +18,14 @@ int main(void)
 	for (y = 0; y < 48; y++)
 	{
 		z = w + x;
-		printf("%d", z);
+		printf("%lu", z);
 		if (y == 47)
 			break;
 		printf(",");
 		printf(" ");
-		w++;
-		x++;
+		u = x;
+		w = u;
+		x = z;
 	}
 	printf("\n");
 	return (0);
