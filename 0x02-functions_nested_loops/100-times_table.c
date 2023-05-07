@@ -17,7 +17,10 @@ void print_times_table(int n)
 			break;
 		_putchar(0 + '0');
 		if (n == 0)
+		{
+			_putchar(' ');
 			break;
+		}
 		_putchar(',');
 
 		for (i = 1; i < (n + 1); i++)
@@ -28,7 +31,7 @@ void print_times_table(int n)
 				_putchar(' ');
 				_putchar((z / 100) + '0');
 				_putchar(((z / 10) % 10) + '0');
-				_putchar((z % 100) + '0');
+				_putchar((z % 10) + '0');
 			}
 			else if (z > 9)
 			{
