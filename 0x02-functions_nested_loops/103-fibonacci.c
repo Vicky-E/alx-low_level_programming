@@ -24,6 +24,7 @@ int main(void)
 		w = u;
 		x = z;
 	}
+	a += 2;
 	printf("%lu\n", a);
 	return (0);
 }
