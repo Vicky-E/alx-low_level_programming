@@ -5,28 +5,28 @@
  */
 int main(void)
 {
-        unsigned long int u, w, x, y, z;
+	unsigned long int u, w, x, y, z;
 
-        w = 1;
-        x = 2;
-        printf("%lu", w);
-        printf(",");
-        printf(" ");
-        printf("%lu", x);
-        printf(",");
-        printf(" ");
-        for (y = 0; y < 96; y++)
-        {
-                z = w + x;
-                printf("%lu", z);
-                if (y == 95)
-                        break;
-                printf(",");
-                printf(" ");
-                u = x;
-                w = u;
-                x = z;
-        }
-        printf("\n");
-        return (0);
+	w = 1;
+	x = 2;
+	printf("%lu", w);
+	printf(",");
+	printf(" ");
+	printf("%lu", x);
+	printf(",");
+	printf(" ");
+	for (y = 0; y < 96; y++)
+	{
+		z = w + x;
+		printf("%lu", z);
+		if (y == 95)
+			break;
+		printf(",");
+		printf(" ");
+		u = x;
+		w = u;
+		x = z;
+	}
+	printf("\n");
+	return (0);
 }
