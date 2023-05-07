@@ -23,5 +23,7 @@ void print_diagonal(int n)
 		}
 		_putchar('\n');
 	}
+	if ( n > 0)
+		break;
 	_putchar('\n');
 }
