@@ -16,10 +16,10 @@ void print_array(int *a, int n)
 			break;
 		printf("%d", a[i]);
 		if (i == (n - 1))
-			break;
+			continue;
 		printf(",");
 		printf(" ");
 		i++;
 	}
-	_putchar('\n');
+	printf("\n");
 }
