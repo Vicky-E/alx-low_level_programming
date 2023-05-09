@@ -15,11 +15,11 @@ void print_array(int *a, int n)
 		if (n <= 0 || i > n)
 			break;
 		printf("%d", a[i]);
-		if (i == n)
+		if (i == (n - 1))
 			continue;
 		printf(",");
 		printf(" ");
 		i++;
 	}
-	printf("\n";
+	printf("\n");
 }
