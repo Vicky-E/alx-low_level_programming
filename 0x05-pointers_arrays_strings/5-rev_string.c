@@ -7,9 +7,10 @@
  */
 void rev_string(char *s)
 {
+	char *a;
+
 	int len = 0;
 	int i = 0;
-	char *a;
 
 	while (s[i])
 	{
@@ -20,7 +21,7 @@ void rev_string(char *s)
 	{
 		a[i] = s[i];
 	}
-	for (i = 0; i < (len - 1); i++)
+	for (i = 0; i <= (len - 1); i++)
 	{
 		s[i] = a[i];
 	}
