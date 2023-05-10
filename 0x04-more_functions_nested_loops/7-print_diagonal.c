@@ -9,7 +9,7 @@ void print_diagonal(int n)
 {
 	int x;
 	int m;
-	
+
 	if (n <= 0)
 		_putchar('\n');
 	else
@@ -24,7 +24,7 @@ void print_diagonal(int n)
 					_putchar(' ');
 			}
 			if (x == (n - 1))
-				continue;
+				break;
 			_putchar('\n');
 		}
 		_putchar('\n');
