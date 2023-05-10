@@ -23,6 +23,8 @@ void print_diagonal(int n)
 				else
 					_putchar(' ');
 			}
+			if (m == n - 1)
+				continue;
 			_putchar('\n');
 		}
 		_putchar('\n');
