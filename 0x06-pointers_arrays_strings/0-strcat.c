@@ -22,7 +22,7 @@ char *_strcat(char *dest, char *src)
 		L++;
 	}
 	len = l + L;
-	for (i = 0; i < len; i++)
+	while (dest[len])
 	{
 		if (i < l)
 			dest[len] = dest[i];
