@@ -21,6 +21,8 @@ void print_triangle(int size)
 				else
 					_putchar('#');
 			}
+			if (s == size - 1)
+				break;
 			_putchar('\n');
 		}
 	}
