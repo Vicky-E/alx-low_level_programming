@@ -14,18 +14,17 @@ void print_triangle(int size)
 	{
 		for (x = size - 1; x >= 0; x--)
 		{
-			for(s = 0; s < size; s++)
+			for (s = 0; s < size; s++)
 			{
 				if (s < x)
 					_putchar (' ');
 				else
 					_putchar('#');
 			}
-			if (s == size - 1)
+			if (x == 0)
 				break;
 			_putchar('\n');
 		}
 	}
 	_putchar('\n');
-
 }
