@@ -23,3 +23,4 @@ char *_strncpy(char *dest, char *src, int n)
 		dest[l] = src[i];
 	}
         return (dest);
+}
