@@ -13,7 +13,11 @@ char *cap_string(char *n)
 	{
 		if (n[i] >= 'a' && n[i] < 'z')
 		{
-			if (n[i - 1] == 32 || n[i - 1] <= 46)
+			if (n[i - 1] >= 32 && n[i - 1] <= 34)
+				n[i] = n[i] - 32;
+			else if (n[i - 1] == 40 || n[i - 1] == 41)
+				n[i] = n[i] - 32;
+			else if (n[i - 1] == 44  || n[i - 1] == 46)
 				n[i] = n[i] - 32;
 			else if (n[i - 1] == 58 || n[i - 1] == 59)
 				n[i] = n[i] - 32;
