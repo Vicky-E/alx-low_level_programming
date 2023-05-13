@@ -25,6 +25,8 @@ char *cap_string(char *n)
 				n[i] = n[i] - 32;
 			else if (n[i - 1] == 10 || n[i - 1] == 9)
 				n[i] = n[i] - 32;
+			else if (n[i - 1] == 11)
+				n[i] = n[i] - 32;
 		}
 	}
 	return (n);
