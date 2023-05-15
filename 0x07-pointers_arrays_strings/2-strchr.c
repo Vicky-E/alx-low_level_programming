@@ -4,7 +4,7 @@
  * _strchr - checks for a character in a string
  * @s: string
  * @c: character
- * Return: pointer to s or null
+ * Return: character value
  */
 char *_strchr(char *s, char c)
 {
@@ -16,5 +16,5 @@ char *_strchr(char *s, char c)
 		}
 		s++;
 	}
-	return NULL;
+	return (NULL);
 }
