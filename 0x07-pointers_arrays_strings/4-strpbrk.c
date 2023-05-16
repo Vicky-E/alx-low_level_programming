@@ -1,7 +1,7 @@
 #include <unistd.h>
 #include "main.h"
 /**
- * _strpbk - searches for a string for any n set of bytes
+ * _strpbrk - searches for a string for any n set of bytes
  * @s: string
  * @accept: string
  * Return: char
