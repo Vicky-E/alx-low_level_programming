@@ -20,12 +20,12 @@ int _strcmp(char *s1, char *s2)
 			}
 			else if (s1[i] < s2[j])
 			{
-				a = -1;
+				a = -15;
 				break;
 			}
 			else if (s1[i] > s2[j])
 			{
-				a = 1;
+				a = 15;
 				break;
 			}
 		}
