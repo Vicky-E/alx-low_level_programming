@@ -1,10 +1,10 @@
 #include <unistd.h>
 #include "main.h"
 /**
- * _strpbk - searches for a sting for any n set of bytes
+ * _strpbk - searches for a string for any n set of bytes
  * @s: string
  * @accept: string
- * Return: pointer to s on success
+ * Return: char
  */
 char *_strpbrk(char *s, char *accept)
 {
