@@ -7,20 +7,19 @@
  */
 char *leet(char *n)
 {
+	int j = 11;
 	int i;
+
+	char array[11] = {'a', 'e', 'o', 't', 'l', 'A', 'E', 'O', 'T', 'L'};
+	char array_2[11] = {'4', '3', '0', '7', '1', '4', '3', '0', '7', '1'};
 
 	for (i = 0; n[i] != '\0'; i++)
 	{
-		if (n[i] == 'a' || n[i] == 'A')
-			n[i] = 52;
-		else if (n[i] == 'e' || n[i] == 'E')
-			n[i] = 51;
-		else if (n[i] == 'o' || n[i] == 'O')
-			n[i] = 48;
-		else if (n[i] == 't' || n[i] == 'T')
-			n[i] = 55;
-		else if (n[i] == 'l' || n[i] == 'L')
-			n[i] = 49;
+		for (j = 0; j <= 10; j++)
+		{
+			if (n[i] == array[j])
+				n[i] = array_2[j];
+		}
 	}
 	return (n);
 }
