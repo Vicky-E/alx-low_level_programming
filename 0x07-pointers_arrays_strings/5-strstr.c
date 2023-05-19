@@ -21,6 +21,7 @@ char *_strstr(char *haystack, char *needle)
 		{
 			i++;
 			j++;
+
 			if (j == len)
 			{
 				return (haystack);
