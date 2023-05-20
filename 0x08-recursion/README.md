@@ -1,2 +1,1 @@
-prints a string using recursion
-recursion functions
+Recursive functions
