@@ -24,4 +24,4 @@ void print_chessboard(char (*a)[8])
 			break;
 		_putchar('\n');
 	}
-}a
+}
