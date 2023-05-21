@@ -15,11 +15,11 @@ void print_chessboard(char (*a)[8])
 		{
 			if (i <= 1)
 				_putchar(a[i][j]);
-			else if (i > 1 && i <= 5)
+			else if (i > 1 && i <= 8 - 3)
 				_putchar(' ');
-			else if (i > 5)
+			else if (i > 8 - 3)
 				_putchar(a[i][j]);
 		}
 		_putchar('\n');
 	}
-}
+}a
