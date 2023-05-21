@@ -1,16 +1,17 @@
 #include <unistd.h>
 #include "main.h"
 /**
- * _strstr - locates a substring
- * @haystack: string
- * @needle: substring
- * Return: character
+ * _strstr - locates a substring.
+ * @haystack: string.
+ * @needle: substring.
+ * Return: pointer on sucess null otherwise.
  */
 char *_strstr(char *haystack, char *needle)
 {
 	int i, j, len;
 
 	j = 0;
+
 	len = 0;
 
 	while (needle[j] != '\0')
