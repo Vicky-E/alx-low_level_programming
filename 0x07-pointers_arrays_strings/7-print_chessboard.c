@@ -20,6 +20,8 @@ void print_chessboard(char (*a)[8])
 			else if (i > 8 - 3)
 				_putchar(a[i][j]);
 		}
+		if (i == 8 - 1)
+			break;
 		_putchar('\n');
 	}
 }a
