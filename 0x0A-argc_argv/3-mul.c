@@ -11,7 +11,7 @@ int main(int a, int b)
 
 	if (argc < 2)
 	{
-		printf("%s\n Error");
+		printf("\n Error");
 		return (1);
 	}
 	c = a * b;
