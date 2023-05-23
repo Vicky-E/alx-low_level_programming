@@ -8,9 +8,9 @@
  */
 int main(int argc, char *argv[])
 {
-	while(*argv)
-	{	argv++;
-		argc++;
+	for (i = 0; i< argc;i++)
+	{
+		argv[i];
 	}
 	printf("%d\n", argc);
 	return (0);
