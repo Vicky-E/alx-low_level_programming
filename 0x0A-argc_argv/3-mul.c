@@ -5,9 +5,9 @@
  * @b: integer
  * Return: 0 on sucess
  */
-int main(int a, int b)
+int main(int argc,int a, int b)
 {
-	int argc, c;
+	int c;
 
 	if (argc < 2)
 	{
