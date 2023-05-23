@@ -1,20 +1,25 @@
 #include <stdio.h>
+#include <stdlib.h>
 /**
  * main - multiplies two numbers
  * @a: integer
  * @b: integer
  * Return: 0 on sucess
  */
-int main(int argc,int a, int b)
+int main (int argc, char *argv[])
 {
-	int c;
+	int a;
+	int b;
+	int result;
 
-	if (argc < 2)
+	if (argc < 4) 
 	{
 		printf("\n Error");
 		return (1);
 	}
-	c = a * b;
-	printf("%d\n", c);
+	a = atoi(argv[3]);
+	b = atoi(argv[4]);
+	result = a * b;
+	printf("%d\n", result);
 	return (0);
 }
