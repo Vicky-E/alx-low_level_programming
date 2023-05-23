@@ -6,7 +6,7 @@
  * @argv: argument vector
  * Return: 0 on sucess
  */
-int main(int argc, char *argv)
+int main(int argc, char *argv[])
 {
 	int i;
 	for (i = 0; i <= argc; i++)
