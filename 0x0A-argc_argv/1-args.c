@@ -10,5 +10,7 @@ int main(int argc, char *argv[])
 {
 	if (*argv)
 		printf("%d\n", argc);
+	else
+		printf("%d\n",argc);
 	return (0);
 }
