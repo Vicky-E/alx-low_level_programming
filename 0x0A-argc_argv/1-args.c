@@ -6,8 +6,16 @@
  * @argv: vector
  * Return: 0 on sucess
  */
-int main(int argc, char __attribute__ ((unused)) *argv[])
+int main(int argc, char *argv[])
 {
+	int i = 0;
+
+	while (*argv)
+	{
+		argv++;
+		i++;
+	}
+	argc = i;
 	printf("%d\n", argc);
 	return (0);
 }
