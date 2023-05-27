@@ -14,10 +14,10 @@ char *_strdup(char *str)
 
 	if (copy == NULL || str == NULL)
 		return ('\0');
-	while (*str)
+	while (*str != '\0')
 	{
-		*copy = *str;
 		str++;
 	}
+	*copy = *str;
 	return (copy);
 }
