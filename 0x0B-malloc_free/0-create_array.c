@@ -19,7 +19,7 @@ char *create_array(unsigned int size, char c)
 	{
 		if (i == 0)
 			s[i] = c;
-		s[i];
+		printf("%c", s[i]);
 		i++;
 	}
 	return (s);
