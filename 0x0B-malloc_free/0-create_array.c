@@ -4,7 +4,7 @@
 #include "main.h"
 /**
  * create_array - creates an array of character
- * size: size of array
+ * @size: size of array
  * @c: character
  * Return: character
  */
