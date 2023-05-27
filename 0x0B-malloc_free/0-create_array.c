@@ -10,17 +10,11 @@
  */
 char *create_array(unsigned int size, char c)
 {
-	char *s;
-	unsigned int i;
+	char s[size];
+	char *p = s;
 
 	if (size <= 0)
 		return ('\0');
-	for (i = 0; i < size;)
-	{
-		if (i == 0)
-			s[i] = c;
-		printf("%c", s[i]);
-		i++;
-	}
-	return (s);
+	s[0] = c;
+	return (p);
 }
