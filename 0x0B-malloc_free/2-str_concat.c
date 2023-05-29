@@ -21,8 +21,8 @@ char *str_concat(char *s1, char *s2)
 		while (*s2)
 		{
 			n[j] = *s2;
-			j++;
 			s2++;
+			j++;
 			return (n);
 		}
 	}
