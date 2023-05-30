@@ -8,8 +8,8 @@
  */
 void print_dog(struct dog *d)
 {
-	if (d == NULL)
-		putchar(' ');
+	if (d->name == NULL && d->age == '\0' && d->owner == NULL)
+		return;
 	if (d->name != NULL)
 		printf("Name: %s\n", d->name);
 	else
