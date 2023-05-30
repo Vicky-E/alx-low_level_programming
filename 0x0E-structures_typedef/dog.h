@@ -1,7 +1,10 @@
 #ifndef DOG_H
 #define DOG_H
 /**
- * header file
+ * dog - struct
+ * @name: element
+ * @age: element
+ * @owner: element
  */
 struct dog
 {
