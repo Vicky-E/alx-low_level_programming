@@ -1,7 +1,7 @@
-#ifndef _DOG_H
-#define _DOG_H
+#ifndef DOG_H
+#define DOG_H
 /**
- * dog - struct
+ * struct dog - struct
  * @name: element
  * @age: element
  * @owner: element
