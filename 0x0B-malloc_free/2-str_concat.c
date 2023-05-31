@@ -13,30 +13,11 @@ char *str_concat(char *s1, char *s2)
 	int length, i, ls1, ls2, j = 0, k = 0;
 	char *strcat, *n, *m;
 
-	if (s1 == NULL && s2 == NULL)
-		return (NULL);
-	if (s1 == NULL && s2 != NULL)
-	{
-		n = malloc(strlen(s2));
-		while (*s2)
-		{
-			n[j] = *s2;
-			s2++;
-			j++;
-			return (n);
-		}
-	}
-	if (s2 == NULL && s1 != NULL)
-	{
-		m = malloc(strlen(s1));
-		while (*s1)
-		{
-			m[k] = *s1;
-			k++;
-			s1++;
-			return (m);
-		}
-	}
+	if (s2 == NULL)
+		s2 = "";
+	if (s1 == NULL)
+		s1 = "";
+
 	ls1 = strlen(s1);
 	ls2 = strlen(s2);
 	length = ls1 + ls2 + 1;
