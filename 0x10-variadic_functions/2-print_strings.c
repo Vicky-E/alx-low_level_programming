@@ -3,12 +3,13 @@
 #include <stdio.h>
 /**
  * print_strings - prints string
- * @seperator: string
+ * @separator: string
  * @n: number of strings
  */
 void print_strings(const char *separator, const unsigned int n, ...)
 {
 	va_list string;
+
 	unsigned int i;
 	char *s;
 
