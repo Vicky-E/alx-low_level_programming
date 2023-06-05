@@ -22,6 +22,7 @@ int **alloc_grid(int width, int height)
 		{
 			array[width][height] = 0;
 		}
+		_putchar('\n');
 	}
 	return(array);
 }
