@@ -22,4 +22,4 @@ void print_diagsums(int *a, int size)
 		a -= size;
 	}
 	printf("%d, %d\n", sum, s2);
-}a
+}
