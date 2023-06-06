@@ -26,7 +26,6 @@ int **alloc_grid(int width, int height)
 			array[width][height] = 0;
 		}
 		_putchar('\n');
-		if (h
 	}
 	return (array);
 }
