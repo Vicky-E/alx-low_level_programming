@@ -8,8 +8,6 @@
  */
 int main(int argc, __attribute__((unused))char *argv[])
 {
-	int i;
-
 	if (argc == 1)
 		printf("0");
 	else if (argc > 1)
