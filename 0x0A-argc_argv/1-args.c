@@ -6,15 +6,21 @@
  * @argv: array of arguments
  * Return: 0 on sucess
  */
-int main(int argc, __attribute__((unused))char *argv[])
+int main(int argc, char *argv[])
 {
 	int i = 0;
-
-	while (*argv)
+	if (argc == 1)
 	{
-		i++;
-		argv++
+		printf("0\n");
 	}
-	printf("%d\n", i);
+	else
+	{
+		while (*argv)
+		{
+			i++;
+			argv++
+		}
+		printf("%d\n", i);
+	}
 	return (0);
 }
