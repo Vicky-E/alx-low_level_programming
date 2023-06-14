@@ -1,6 +1,5 @@
 #include <stdlib.h>
 #include <unistd.h>
-#include <string.h>
 #include "main.h"
 /**
  * _strdup - allocates new memory to copied string
@@ -10,10 +9,16 @@
 char *_strdup(char *str)
 {
 	char *copy;
+	int i = 0;
 
 	if (str == NULL)
 		return (NULL);
-	copy = malloc(sizeof(char) * strlen(str) + 1);
+	while (*str != '\0')
+	{
+		i++;
+		str++;
+	}
+	copy = malloc(sizeof(char) * i + 1);
 	if (copy == NULL)
 		return (NULL);
 	while (*str != '\0')
