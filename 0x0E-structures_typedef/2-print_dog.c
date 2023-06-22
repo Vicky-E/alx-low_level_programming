@@ -5,7 +5,7 @@
  * print_dog - prints struct dog
  * @d: pointer to struct
  */
-void print_dog(struct dog *d);
+void print_dog(struct dog *d)
 {
 	if (d == NULL)
 		return;
