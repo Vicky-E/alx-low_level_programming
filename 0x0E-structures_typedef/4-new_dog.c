@@ -3,11 +3,9 @@
 #include <string.h>
 #include "dog.h"
 /**
- * new_dog - function
- * @name: elements of struct
- * @age: element
- * @owner: element
- * Return: new struct
+ * _strlen - gets length of string
+ * @s: string
+ * Return: length of string
  */
 int _strlen(char *s)
 {
@@ -19,6 +17,12 @@ int _strlen(char *s)
 	}
 	return (l);
 }
+/**
+ * _strcpy - copies src to dest
+ * @dest: destination of copy
+ * @src: string to be copied
+ * Return: pointer to copied string
+ */
 char *_strcpy(char *dest, char *src)
 {
 	int i = 0;
@@ -34,6 +38,13 @@ char *_strcpy(char *dest, char *src)
 	}
 	return (dest);
 }
+/**
+ * new_dog - creates a new struct
+ * @name: name of dog
+ * @age: age of dog
+ * @owner: owner of dog
+ * Return: pointer to new struct
+ */
 dog_t *new_dog(char *name, float age, char *owner)
 {
 
