@@ -8,6 +8,21 @@
  * @owner: element
  * Return: struct
  */
+char *_strcpy(char *dest, char *src)
+{
+	int i = 0;
+	int l = 0;
+
+	while (src[i])
+	{	i++;
+		l++;
+	}
+	for (i = 0; i <= l; i++)
+	{
+		dest[i] = src[i];
+	}
+	return (dest);
+}
 dog_t *new_dog(char *name, float age, char *owner)
 {
 
@@ -17,8 +32,8 @@ dog_t *new_dog(char *name, float age, char *owner)
 		return (NULL);
 	if (name == NULL || age < 0 || owner == NULL)
 		return (NULL);
-	doggie->name = strcopy(doggie->name,name);
+	doggie->name = _strcopy(doggie->name,name);
 	doggie->age = age;
-	doggie->owner = strcopy(doggie->owner,owner);
+	doggie->owner = _strcopy(doggie->owner,owner);
 	return (doggie);
 }
