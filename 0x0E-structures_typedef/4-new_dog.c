@@ -6,7 +6,7 @@
  * @name: elements of struct
  * @age: element
  * @owner: element
- * Return: struct
+ * Return: new struct
  */
 char *_strcpy(char *dest, char *src)
 {
@@ -26,14 +26,15 @@ char *_strcpy(char *dest, char *src)
 dog_t *new_dog(char *name, float age, char *owner)
 {
 
-	struct dog_t *doggie;
-	doggie = malloc(sizeof(dog_t);
+	dog_t *doggie;
+
+	doggie = malloc(sizeof(dog_t));
 	if (doggie == NULL)
 		return (NULL);
 	if (name == NULL || age < 0 || owner == NULL)
 		return (NULL);
-	doggie->name = _strcopy(doggie->name,name);
+	doggie->name = _strcpy(doggie->name, name);
 	doggie->age = age;
-	doggie->owner = _strcopy(doggie->owner,owner);
+	doggie->owner = _strcpy(doggie->owner, owner);
 	return (doggie);
 }
