@@ -3,10 +3,13 @@
 /**
  * free_dog - frees struct dog
  * @dog_t: struct
- * @d: pointer to dog
+ * @d: pointer to dog_t
  */
 void free_dog(dog_t *d)
 {
-	free(dog_t);
+	if (d == NULL)
+		return;
+	free(d->name);
+	free(d->owner);
 	free(d);
 }
