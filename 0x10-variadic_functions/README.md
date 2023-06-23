@@ -1,1 +1,1 @@
-0-sum_them_all.c sums up all parameters
+0-sum sums up all parameters
