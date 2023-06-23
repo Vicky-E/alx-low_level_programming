@@ -9,6 +9,16 @@
  * @owner: element
  * Return: new struct
  */
+int _strlen(char *s)
+{
+	int l = 0;
+
+	while (*s++)
+	{
+		l++;
+	}
+	return (l);
+}
 char *_strcpy(char *dest, char *src)
 {
 	int i = 0;
