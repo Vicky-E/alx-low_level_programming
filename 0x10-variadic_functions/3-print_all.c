@@ -18,7 +18,7 @@ void pchar(va_list args)
 	ch = va_arg(args, int);
 	printf("%c", ch);
 }
-`/**
+/**
  * pstr - prints for format s
  * @args: list of arguments
  */
