@@ -7,7 +7,7 @@
  * @argv: argument array
  * Return: 0
  */
-int main(int __attribute((__unused__)) argc, char *argv[])
+int main(int argc, char *argv[])
 {
 	int num1, num2;
 	char *op;
@@ -33,4 +33,4 @@ int main(int __attribute((__unused__)) argc, char *argv[])
 	}
 	printf("%d\n", get_op_func(op)(num1, num2));
 	return (0);
-}			
+}
