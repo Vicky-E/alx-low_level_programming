@@ -69,4 +69,5 @@ void print_all(const char * const format, ...)
 		y++;
 	}
 	printf("\n");
+	va_end(args);
 }
