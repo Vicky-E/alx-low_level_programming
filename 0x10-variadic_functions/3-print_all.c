@@ -11,6 +11,10 @@ void pint(va_list args);
 void pfloat(va_list args);
 void print_all(const char * const format, ...);
 
+/**
+ * pchar - prints specifier c
+ * @args: list of arguments
+ */
 void pchar(va_list args)
 {
 	char ch;
@@ -18,6 +22,10 @@ void pchar(va_list args)
 	ch = va_arg(args, int);
 	printf("%c", ch);
 }
+/**
+ * pstr - prints for format s
+ * @args: list of arguments
+ */
 void pstr(va_list args)
 {
 	char *str;
@@ -27,6 +35,10 @@ void pstr(va_list args)
 		str = "(nil)";
 	printf("%s", str);
 }
+/**
+ * pint - prints integer format specifier
+ * @args: list of arguments
+ */
 void pint(va_list args)
 {
 	int num;
@@ -34,6 +46,10 @@ void pint(va_list args)
 	num = va_arg(args, int);
 	printf("%d", num);
 }
+/**
+ * pfloat - prints specifier f
+ * @args: list of arguments
+ */
 void pfloat(va_list args)
 {
 	float dec;
