@@ -1,10 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "variadic_functions.h"
-/**
- * print_all - prints for various specifiers
- * @format: character string
- */
 void pchar(va_list args);
 void pstr(va_list args);
 void pint(va_list args);
@@ -60,6 +56,7 @@ void pfloat(va_list args)
 /**
  * print_all - prints for various specifiers
  * @format: character string
+ * @...: unknown number of arguments to be printed
  */
 
 void print_all(const char * const format, ...)
