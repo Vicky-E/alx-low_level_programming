@@ -6,7 +6,8 @@ int sum_them_all(const unsigned int n, ...);
 /**
  * struct p - printer
  * @sym: represents data type
- * @print: functioner pointer to a function that prints a data type corresponding to sym
+ * @print: function pointer to a function
+ * that prints a data type corresponding to sym
  */
 typedef struct p
 {
