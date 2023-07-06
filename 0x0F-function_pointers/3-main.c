@@ -1,7 +1,8 @@
-#include <stdarg.h>
+#include <stdlib.h>
 #include "3-calc.h"
+#include <stdio.h>
 /**
- * main - test file
+ * main - prints result of operation
  * @argc: argument count
  * @argv: argument array
  * Return: 0
