@@ -18,12 +18,7 @@ int (*get_op_func(char *s))(int, int)
 	};
 	int i = 0;
 
-	while (i < 6 && ((*s) != ops[i].op))
-	i++;
-	if (i < 4)
-	{
-		ops[i].f(int a, int b);
-	}
-	printf("\n");
-	return (0);
+	while (ops[i].op != NULL && (*s != *(ops[i].op)))
+		i++;
+	return (ops[i].f);
 }
