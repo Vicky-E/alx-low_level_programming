@@ -22,7 +22,7 @@ void pchar(va_list args)
 	ch = va_arg(args, int);
 	printf("%c", ch);
 }
-/**
+`/**
  * pstr - prints for format s
  * @args: list of arguments
  */
@@ -57,6 +57,11 @@ void pfloat(va_list args)
 	dec = va_arg(args, double);
 	printf("%f", dec);
 }
+/**
+ * print_all - prints for various specifiers
+ * @format: character string
+ */
+
 void print_all(const char * const format, ...)
 {
 	va_list args;
