@@ -2,6 +2,7 @@
 #include "lists.h"
 /**
  * add_nodeint - adds newnode at head
+ * @head: pointer to list
  * @n: element
  * Return: address or null
  */
