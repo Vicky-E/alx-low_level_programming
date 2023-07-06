@@ -6,8 +6,8 @@ int sum_them_all(const unsigned int n, ...);
 typedef struct p
 {
 	char *sym;
-	void(*print)(va_list args);
-}printer;
+	void (*print)(va_list args);
+} printer;
 
 void print_numbers(const char *separator, const unsigned int n, ...);
 void print_strings(const char *separator, const unsigned int n, ...);
