@@ -3,7 +3,6 @@
 /**
  * add_nodeint - adds newnode at head
  * @n: element
- *
  * Return: address or null
  */
 listint_t *add_nodeint(listint_t **head, const int n)
