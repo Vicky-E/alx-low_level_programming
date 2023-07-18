@@ -9,7 +9,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 {
 	ssize_t count;
 	FILE *f;
-	char str[letters];
+	char str;
 
 	if (filename == NULL)
 		return (0);
@@ -17,11 +17,10 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	if (f == NULL)
 		return (0);
 	do {
-		str[letters] = fgetc(f);
-		if (feof(f))
-			break;
+		str = fgetc(f);
 		write(STDOUT_FILENO, &str, 1);
 		count++;
-	} while (1);
+	} while (str != EOF);
+	fclose(f);
 	return (count);
 }
