@@ -13,8 +13,8 @@ int append_text_to_file(const char *filename, char *text_content)
 		return (-1);
 	if (text_content != NULL)
 	{
-		o = open(filename,O_RDWR || O_APPEND);
-		w = write(filename, text_content, strlen(text_content));
+		o = open(filename, O_RDWR || O_APPEND);
+		w = write(o, text_content, strlen(text_content));
 		if (o == -1 || w == -1)
 			return (-1);
 		return (1);
