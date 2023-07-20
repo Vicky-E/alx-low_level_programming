@@ -19,7 +19,8 @@ int append_text_to_file(const char *filename, char *text_content)
 			return (-1);
 		return (1);
 	}
-	else
-		o = open(filename, O_RDONLY);
+	o = open(filename, O_RDONLY);
+	if (o == -1)
+		return (-1);
 	return (1);
 }
