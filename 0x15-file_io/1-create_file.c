@@ -9,27 +9,18 @@
 int create_file(const char *filename, char *text_content)
 {
 	int c, w, len;
-	char *buffer;
 
 	if (filename == NULL)
 		return (-1);
 	len = strlen(text_content);
-	buffer = malloc(sizeof(char) * len);
-	if (buffer == NULL)
-		return (-1);
 	c = open(filename, O_RDWR | O_CREAT | O_TRUNC);
 	if (c == -1)
-	{
-		free(buffer);
 		return (-1);
-	}
-	w = write(text_content, c, len);
+	w = write(filename, text_content, len);
 	if (w == -1)
 	{
-		free(buffer);
 		return (-1);
 	}
-	free(buffer);
 	close(c);
 	return (1);
 }
