@@ -7,7 +7,8 @@
  */
 int main(int argc, char *argv[])
 {
-	int o, c, r, w, cl, cll;
+	int o, c, cl, cll;
+	size_t r, w;
 	char *buffer, *file_from, *file_to;
 
 	file_from = argv[1];
@@ -22,18 +23,18 @@ int main(int argc, char *argv[])
 	c = open(file_to, O_WRONLY | O_CREAT | O_TRUNC, 0664);
 	while (o != EOF)
 	{
-		r = read(o, buffer, 1024);
-		w = write(c, buffer, sizeof(buffer));
-	}
-	if (o == -1 || r == -1)
-	{
-		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", file_from);
-		exit(98);
-	}
-	if (c == -1 || w == -1)
-	{
-		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", file_to);
-		exit(99);
+		r = read(o, buffer, sizeof(buffer));
+		w = write(c, buffer, r);
+		if (o == -1 || r == -1)
+		{
+			dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", file_from);
+			exit(98);
+		}
+		if (c == -1 || w == -1)
+		{
+			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", file_to);
+			exit(99);
+		}
 	}
 	cl = close(o);
 	cll = close(c);
