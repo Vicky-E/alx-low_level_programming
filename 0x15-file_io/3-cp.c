@@ -21,9 +21,8 @@ int main(int argc, char *argv[])
 	}
 	o = open(file_from, O_RDONLY);
 	c = open(file_to, O_WRONLY | O_CREAT | O_TRUNC, 0664);
-	while (o != EOF)
+	while (r = read(o, buffer, sizeof(buffer)) > 0)
 	{
-		r = read(o, buffer, sizeof(buffer));
 		w = write(c, buffer, r);
 		if (o == -1 || r == -1)
 		{
