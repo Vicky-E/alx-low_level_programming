@@ -8,7 +8,7 @@
 int main(int argc, char *argv[])
 {
 	int o, c, cl, cll;
-	size_t r, w;
+	ssize_t r, w;
 	char *buffer, *file_from, *file_to;
 
 	file_from = argv[1];
