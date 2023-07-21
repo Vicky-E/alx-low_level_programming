@@ -26,11 +26,13 @@ int main(int argc, char *argv[])
 		if (o == -1 || r == -1)
 		{
 			dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", file_from);
+			close(o);
 			exit(98);
 		}
 		if (c == -1 || w == -1)
 		{
 			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", file_to);
+			close(c);
 			exit(99);
 		}
 	}
