@@ -19,7 +19,7 @@ int main(int argc, char *argv[])
 	o = open(argv[0], O_RDONLY);
 	c = open(argv[1], O_CREAT | O_WRONLY | O_TRUNC, 0664);
 	r = read(o, buffer, 1024);
-	w = write(c, buffer, sizeof(buffer));
+	w = write(c, buffer, strlen(buffer));
 	if (o == -1 || r == -1)
 	{
 		exit(98);
