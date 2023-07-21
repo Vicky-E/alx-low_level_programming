@@ -11,7 +11,7 @@ int main(int argc, char *argv[])
 	char *buffer;
 
 	buffer = malloc(sizeof(char) * 1024);
-	if (argc != 2)
+	if (argc != 3)
 	{
 		exit(97);
 		dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
