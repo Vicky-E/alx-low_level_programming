@@ -20,19 +20,18 @@ int main(int argc, char *argv[])
 	}
 	o = open(file_from, O_RDONLY);
 	c = open(file_to, O_CREAT | O_WRONLY | O_TRUNC, 0664);
-	while ((r = read(o, buffer, sizeof(buffer))) > 0)
+	r = read(o, buffer, 1024);
+	while ((r = read(o, buffer, 1024)) > 0)
 	{
 		w = write(c, buffer, r);
 		if (o == -1 || r == -1)
 		{
 			dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", file_from);
-			close(o);
 			exit(98);
 		}
 		if (c == -1 || w == -1)
 		{
 			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", file_to);
-			close(c);
 			exit(99);
 		}
 	}
