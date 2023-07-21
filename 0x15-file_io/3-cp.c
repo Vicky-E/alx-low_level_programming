@@ -10,7 +10,7 @@ int main(int argc, char *argv[])
 	int o, c, r, w, cl, cll;
 	char *buffer;
 
-	buffer = malloc(1024);
+	buffer = malloc(sizeof(char) * 1024);
 	if (argc != 2)
 	{
 		exit(97);
@@ -19,7 +19,7 @@ int main(int argc, char *argv[])
 	o = open(argv[0], O_RDONLY);
 	c = open(argv[1], O_CREAT  | O_TRUNC, 0664);
 	r = read(o, buffer, 1024);
-	w = write(c, buffer, 1024);
+	w = write(c, buffer, sizeof(buffer));
 	if (o == -1 || r == -1)
 	{
 		exit(98);
