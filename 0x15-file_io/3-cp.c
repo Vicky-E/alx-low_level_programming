@@ -11,13 +11,13 @@ int main(int argc, char *argv[])
 	char *buffer;
 
 	buffer = malloc(sizeof(char) * 1024);
-	if (argc != 3)
+	if (argc != 2)
 	{
 		exit(97);
 		dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
 	}
 	o = open(argv[0], O_RDONLY);
-	c = open(argv[1], O_CREAT  | O_TRUNC, 0664);
+	c = open(argv[1], O_CREAT | O_WRONLY | O_TRUNC, 0664);
 	r = read(o, buffer, 1024);
 	w = write(c, buffer, sizeof(buffer));
 	if (o == -1 || r == -1)
