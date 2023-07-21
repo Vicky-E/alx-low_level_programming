@@ -19,7 +19,7 @@ int main(int argc, char *argv[])
 		exit(97);
 	}
 	o = open(file_from, O_RDONLY);
-	c = open(file_to, O_WRONLY | O_CREAT | O_TRUNC, 0664);
+	c = open(file_to, O_CREAT | O_WRONLY | O_TRUNC, 0664);
 	while ((r = read(o, buffer, sizeof(buffer))) > 0)
 	{
 		w = write(c, buffer, r);
