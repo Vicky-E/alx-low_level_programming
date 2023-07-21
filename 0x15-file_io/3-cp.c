@@ -43,7 +43,7 @@ int main(int argc, char *argv[])
 	}
 	if (cll == -1)
 	{
-		dprintf(STDERR_FILENO, "Error: can't close fd %d\n", c);
+		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", c);
 		exit(100);
 	}
 	return (0);
