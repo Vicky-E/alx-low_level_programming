@@ -20,8 +20,8 @@ int main(int argc, char *argv[])
 	}
 	o = open(file_from, O_RDONLY);
 	c = open(file_to, O_CREAT | O_WRONLY | O_TRUNC, 0664);
-	r = read(o, buffer, 1024);
-	while ((r = read(o, buffer, 1024)) > 0)
+	r = read(o, buffer, sizeof(buffer));
+	while ((r = read(o, buffer, sizeof(buffer))) > 0)
 	{
 		w = write(c, buffer, r);
 		if (o == -1 || r == -1)
