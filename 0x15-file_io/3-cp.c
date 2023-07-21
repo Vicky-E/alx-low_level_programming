@@ -7,7 +7,7 @@
  */
 int main(int argc, char *argv[])
 {
-	int o, c, cl, cll;
+	int o, c;
 	ssize_t r, w;
 	char buffer[1024], *file_from, *file_to;
 
@@ -34,14 +34,12 @@ int main(int argc, char *argv[])
 			exit(99);
 		}
 	}
-	cl = close(o);
-	cll = close(c);
-	if (cl == -1)
+	if (close(o) == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", o);
 		exit(100);
 	}
-	if (cll == -1)
+	if (close(c) == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", c);
 		exit(100);
