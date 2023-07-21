@@ -9,11 +9,10 @@ int main(int argc, char *argv[])
 {
 	int o, c, cl, cll;
 	ssize_t r, w;
-	char *buffer, *file_from, *file_to;
+	char buffer[1024], *file_from, *file_to;
 
 	file_from = argv[1];
 	file_to = argv[2];
-	buffer = malloc(1024);
 	if (argc != 3)
 	{
 		dprintf(STDERR_FILENO, "Usage: %s file_from file_to\n", argv[0]);
@@ -21,7 +20,7 @@ int main(int argc, char *argv[])
 	}
 	o = open(file_from, O_RDONLY);
 	c = open(file_to, O_WRONLY | O_CREAT | O_TRUNC, 0664);
-	while (r = read(o, buffer, sizeof(buffer)) > 0)
+	while ((r = read(o, buffer, sizeof(buffer))) > 0)
 	{
 		w = write(c, buffer, r);
 		if (o == -1 || r == -1)
@@ -47,6 +46,5 @@ int main(int argc, char *argv[])
 		dprintf(STDERR_FILENO, "Error: can't close fd %s\n", file_to);
 		exit(100);
 	}
-	free(buffer);
 	return (0);
 }
