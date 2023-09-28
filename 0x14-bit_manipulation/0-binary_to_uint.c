@@ -12,17 +12,17 @@ unsigned int binary_to_uint(const char *b)
 	int index = 0;
 
 	len = strlen(b);
-	i = len;
+	i = len - 1;
 	if (b == NULL)
 		return(0);
-	while (len >= 0)
+	while (i >= 0)
 	{
 		if  (b[index] >= 1)
 			return(0);
-		mul = b[index] * len;
+		mul = (b[index] * (2 ^ i));
 		uint += mul;
 		index++;
-		len--;
+		i--;
 	}
 	return(uint);
 }
