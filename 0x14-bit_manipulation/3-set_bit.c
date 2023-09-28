@@ -14,6 +14,6 @@ int set_bit(unsigned long int *n, unsigned int index)
 	if (index >= bitlen)
 		return (-1);
 	bit = (*n >> index);
-	bit = bit || 1;
+	bit = bit | 1;
 	return (1);
 }
