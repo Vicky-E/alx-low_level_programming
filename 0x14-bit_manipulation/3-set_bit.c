@@ -13,7 +13,7 @@ int set_bit(unsigned long int *n, unsigned int index)
 	bitlen = (sizeof(n)) * 8;
 	if (index >= bitlen)
 		return (-1);
-	bit = (*n >> index) & 1;
-	*n  = bit | 1;
+	bit = (*n >> index);
+	*n  = bit || 1;
 	return (1);
 }
