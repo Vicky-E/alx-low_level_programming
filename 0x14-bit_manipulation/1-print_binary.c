@@ -8,6 +8,12 @@
 void print_binary(unsigned long int n)
 {
 	int i, bin, bitlen, sigbit = 0;
+
+	if (n == '0')
+	{
+		_putchar('0');
+		return;
+	}
 	bitlen = (sizeof(n)) * 8;
 	for (i = bitlen - 1; i >= 0; i--)
 	{
