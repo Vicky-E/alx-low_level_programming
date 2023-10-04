@@ -12,8 +12,13 @@ int create_file(const char *filename, char *text_content)
 	if (filename == NULL)
 		return (-1);
 	if (text_content == NULL)
-		open(filename, O_CREAT);
-	create_file = open(filename, O_CREAT | O_WRONLY |O_TRUNC);
+	{
+		create_file = open(filename, O_CREAT);
+		close(create_file);
+		return (1);
+	}
+
+	create_file = open(filename, O_CREAT | O_RDWR |O_TRUNC);
 	if (create_file == -1)
 		return (-1);
 	while (text_content != NULL)
