@@ -20,13 +20,9 @@ int create_file(const char *filename, char *text_content)
 	create_file = open(filename, O_CREAT | O_RDWR |O_TRUNC, 0600);
 	if (create_file == -1)
 		return (-1);
-	while (text_content != NULL)
-	{
-		write(create_file, &text_content, sizeof(text_content));
-		if ((write(create_file, &text_content, sizeof(text_content))) == -1)
-			return (-1);
-		text_content++;
-	}
+	write(create_file, &text_content, sizeof(text_content));
+	if ((write(create_file, &text_content, sizeof(text_content))) == -1)
+		return (-1);
 	close(create_file);
 	return (1);
 }
