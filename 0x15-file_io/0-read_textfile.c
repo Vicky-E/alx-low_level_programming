@@ -16,10 +16,10 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	if (filename == NULL)
 		return (0);
 	file_open = open(filename, O_RDONLY);
-	file_read = read(file_open, buffer, letters);
+	file_read = read(file_open, buffer, sizeof(buffer));
 	if (file_read == -1)
 		return (0);
-	no_of_bytes = write(STDOUT_FILENO, &buffer, letters);
+	no_of_bytes = write(STDOUT_FILENO, buffer, sizeof(buffer));
 	if (no_of_bytes == -1)
 		return (0);
 	free(buffer);
