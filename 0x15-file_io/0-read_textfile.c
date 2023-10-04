@@ -8,22 +8,25 @@
 ssize_t read_textfile(const char *filename, size_t letters)
 {
 	int file_open, file_read;
-	ssize_t no_of_bytes;
-	ssize_t bytes = letters;
-	char *buffer = malloc(sizeof(char) * 10000);
+	ssize_t bytes_written, bytes_read;
+	char *buffer = malloc(letters);
 
 	if (buffer == NULL)
 		return (0);
 	if (filename == NULL)
 		return (0);
 	file_open = open(filename, O_RDONLY);
-	file_read = read(file_open, buffer, letters);
-	if (file_read == -1)
+	if (file_open == -1)
+	{
+		free(buffer);
 		return (0);
-	no_of_bytes = write(STDOUT_FILENO, buffer, letters);
-	if (no_of_bytes == -1 || no_of_bytes != bytes)
+	}
+	bytes_read = read(file_open, buffer, letters);
+	if (bytes_read == -1)
 		return (0);
-	free(buffer);
+	bytes_written = write(STDOUT_FILENO, buffer, bytes_read);
+	if (bytes_written == -1 || bytes_written != bytes_read)
+		return (0);
 	close(file_open);
-	return (no_of_bytes);
+	return (bytes_written);
 }
