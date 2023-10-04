@@ -19,7 +19,7 @@ int create_file(const char *filename, char *text_content)
 	while (text_content != NULL)
 	{
 		write(create_file, &text_content, strlen(text_content));
-		if (write(create_file, &text_content, strlen(text_content) == -1))
+		if ((write(create_file, &text_content, strlen(text_content))) == -1)
 			return (-1);
 		text_content++;
 	}
