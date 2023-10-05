@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * append_text_to_file - appends text to file
- * @filename; name of f file
+ * @filename: name of f file
  * @text_content: text to be appended
  * Return: 1 on sucess, -1 otherwise
  */
