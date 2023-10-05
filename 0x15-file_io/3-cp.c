@@ -37,7 +37,7 @@ int main(int argc, char *argv[])
 		file_read = read(file_from, buffer, 1024);
 		if (file_from == -1 || file_read == -1)
 		{
-			dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[0]);
+			dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
 			exit(98);
 		}
 	}
@@ -45,7 +45,7 @@ int main(int argc, char *argv[])
 	write_to_file = write(file_to, buffer, sizeof(buffer));
 	if (file_to == -1 || write_to_file == -1)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[0]);
+		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
 		exit(99);
 	}
 	_close(file_from);
