@@ -32,7 +32,8 @@ int main(int argc, char *argv[])
 		exit(97);
 	}
 	file_from = open(argv[1], O_RDONLY);
-	while (file_from != EOF)
+	file_to = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, 0664);
+	while (file_read == 1024)
 	{
 		file_read = read(file_from, buffer, 1024);
 		if (file_from == -1 || file_read == -1)
@@ -40,13 +41,14 @@ int main(int argc, char *argv[])
 			dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
 			exit(98);
 		}
-	}
-	file_to = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, 0664);
-	write_to_file = write(file_to, buffer, sizeof(buffer));
-	if (file_to == -1 || write_to_file == -1)
-	{
-		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
-		exit(99);
+
+		write_to_file = write(file_to, buffer, file_read);
+		if (file_to == -1 || write_to_file == -1)
+		{
+			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
+			
+			exit(99);
+		}
 	}
 	_close(file_from);
 	_close(file_to);
