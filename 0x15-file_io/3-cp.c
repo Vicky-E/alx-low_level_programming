@@ -5,6 +5,11 @@
  * @argv: array containg arguments
  * Return: 0 always
  */
+
+/**
+ * close - closes open file
+ * @fd: file to be closed
+ */
 void _close(int fd)
 {
 	int FD_VALUE = fd;
@@ -27,11 +32,14 @@ int main(int argc, char *argv[])
 		exit(97);
 	}
 	file_from = open(argv[1], O_RDONLY);
-	file_read = read(file_from, buffer, 1024);
-	if (file_from == -1 || file_read == -1)
+	while (file_from != EOF)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[0]);
-		exit(98);
+		file_read = read(file_from, buffer, 1024);
+		if (file_from == -1 || file_read == -1)
+		{
+			dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[0]);
+			exit(98);
+		}
 	}
 	file_to = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, 0664);
 	write_to_file = write(file_to, buffer, sizeof(buffer));
