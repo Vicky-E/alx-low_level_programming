@@ -5,25 +5,9 @@
  * @argv: array containg arguments
  * Return: 0 always
  */
-
-/**
- * close - closes open file
- * @fd: file to be closed
- */
-void _close(int fd)
-{
-	int FD_VALUE = fd;
-
-	close(fd);
-	if (close(fd) == -1)
-	{
-		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", FD_VALUE);
-		exit(100);
-	}
-}
 int main(int argc, char *argv[])
 {
-	int file_read, file_from, file_to, write_to_file;
+	int file_read, file_from, file_to, write_to_file, close_ff, close_ft;
 	char buffer[1024];
 
 	if (argc != 3)
@@ -51,7 +35,17 @@ int main(int argc, char *argv[])
 			exit(99);
 		}
 	}
-	_close(file_from);
-	_close(file_to);
+	close_ff = close(file_from);
+	if (close_ff == -1)
+	{
+		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", file_from);
+		exit(100);
+	}
+	close_ft = close(file_to);
+	if (close_ft == -1)
+	{
+		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", file_to);
+		exit(100);
+	}
 	return (0);
 }
