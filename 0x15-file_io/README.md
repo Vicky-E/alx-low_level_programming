@@ -1,2 +1,0 @@
-file handling
-system calls
